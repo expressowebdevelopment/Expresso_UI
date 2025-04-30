@@ -1,0 +1,35 @@
+// Text Gradient
+@mixin text-fill-transparent {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin primary-border-bottom-gradient($color: #fff) {
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(90deg, $color 0%, transparent 75%);
+  border-image-slice: 1;
+}
+
+// Mixin for generating width classes
+@mixin generate-width-classes($min, $max) {
+  @for $i from $min through $max {
+    .w-#{$i} {
+      width: #{$i + '%'} !important;
+    }
+  }
+}
+
+// Mixin for generating width classes
+@mixin generate-font-size-classes($min, $max) {
+  @for $i from $min through $max {
+    .f-#{$i} {
+      font-size: calc(#{$i * 1px} * var(--fontZoomInOutValue)) !important;
+    }
+  }
+}
+
+// Use the mixin to generate font-size classes
+@include generate-font-size-classes(1, 30);
+
+// Use the mixin to generate width classes
+@include generate-width-classes(1, 100);

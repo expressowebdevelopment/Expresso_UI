@@ -1,0 +1,15 @@
+// Base colors
+:root {
+    --yellow-primary: #fbd858;
+    --yellow-secondary: #f6bf27;
+    --yellow-tertiary: #f7e285;
+
+    --black-primary: #313639;
+    --black-secondary: #2c3437;
+    --black-tertiary: #6d6d6d;
+
+    // Gradient definitions
+    --yellow-primary-gradient: linear-gradient(90deg, var(--yellow-primary) 0%, var(--yellow-tertiary) 50%, var(--yellow-secondary) 100%);
+    --black-primary-gradient: linear-gradient(90deg, var(--black-primary) 0%, var(--black-tertiary) 50%, var(--black-secondary) 100%);
+    --fontZoomInOutValue: 1;
+}

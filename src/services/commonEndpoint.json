@@ -1,0 +1,5 @@
+[
+    {"getToken" :"/Home/getToken"},
+    {"getServerStatus" :"/Home/welcomemsg"},
+    {"getCaptcha":"/Home/getCaptcha"}
+]

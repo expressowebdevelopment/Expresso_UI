@@ -1,0 +1,28 @@
+@mixin text-size($prefix, $sizes) {
+    @each $key, $value in $sizes {
+        .#{$prefix}-#{$key} {
+            font-size: calc(#{$value} * var(--fontZoomInOutValue)) !important;
+        }
+    }
+}
+
+$sizes: (
+    h1: 6rem,
+    h2: 3.75rem,
+    h3: 3rem,
+    h4: 2.125rem,
+    h5: 1.5rem,
+    h6: 1.25rem,
+    subtitle-1: 1rem,
+    subtitle-2: 0.875rem,
+    body-1: 1rem,
+    body-2: 0.875rem,
+    caption: 0.8rem,
+    button: 0.875rem
+);
+
+@include text-size('text', $sizes);
+@include text-size('text-sm', $sizes);
+@include text-size('text-md', $sizes);
+@include text-size('text-lg', $sizes);
+@include text-size('text-xl', $sizes);
