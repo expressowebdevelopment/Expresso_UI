@@ -12,9 +12,9 @@
 
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+Tamil");
 
-* {
-  caret-color: rgb(var(--v-theme-tertiary)) !important;
-}
+// * {
+//   caret-color: rgb(var(--v-theme-tertiary)) !important;
+// }
 
 body[data-theme="en"], body[data-theme="en"] .v-btn, body[data-theme="en"] p, body[data-theme="en"] .v-label, body[data-theme="ta"] ul, body[data-theme="ta"] .v-card-title .fs{
   font-family: 'Inter', sans-serif !important;
@@ -156,17 +156,19 @@ input::placeholder {
 .v-field--active {
   border-color: rgb(var(--v-theme-border-primary-light)) !important;
   box-shadow: 0 0 0 3px rgb(var(--v-theme-primary-light)) !important;
+  border-radius: 8px !important;
 }
 
 .v-field--variant-outlined,
 .v-field--focused,
 .v-field__outline {
   --v-field-border-width: 0 !important;
+  border-radius: 8px !important;
 }
 
 .v-field__outline {
-  color: rgb(var(--v-theme-primary)) !important;
-  border: 0.5px solid rgb(var(--v-theme-primary)) !important;
+  // color: rgb(var(--v-theme-primary)) !important;
+  border: 0.5px solid #B0BEC5 !important;
   opacity: 0.5;
   border-radius: 8px !important;
 }
@@ -198,7 +200,7 @@ input::placeholder {
 }
 
 .v-field__input {
-  min-height: 25px !important;
+  min-height: 35px !important;
   padding: 5px 10px !important;
   color: #000 !important;
 

@@ -5,6 +5,11 @@ import services from '@/services/service';
 const routes = [
   {
     path: '/',
+    name: 'Login',
+    component: () => import(/* webpackChunkName: "login" */ '../components/Login.vue')
+  },
+  {
+    path: '/HomePage',
     name: 'HomePage',
     component: () => import(/* webpackChunkName: "HomePage" */ '../views/layouts/HomePage.vue')
   },

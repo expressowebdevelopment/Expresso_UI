@@ -1,6 +1,6 @@
 <template>
 <v-app>
-    <HeaderView homePageHeader="homePageHeader" />
+    <!-- <HeaderView homePageHeader="homePageHeader" /> -->
     <v-main>
         <router-view />
     </v-main>
